@@ -5,6 +5,7 @@ terraform.tfstate.backup # Kopia zapasowa stanu Terraform
 *.tfvars                # Pliki zmiennych z danymi wrażliwymi (np. klucze AWS)
 *.tfplan                # Pliki planów Terraform
 terraform.tfvars
+.terraform.lock.hcl
 
 
 # Ignoruj klucze SSH i pliki PEM
