@@ -1,0 +1,34 @@
+# Ignoruj pliki Terraform
+.terraform/             # Katalog roboczy Terraform
+terraform.tfstate       # Plik stanu Terraform
+terraform.tfstate.backup # Kopia zapasowa stanu Terraform
+*.tfvars                # Pliki zmiennych z danymi wrażliwymi (np. klucze AWS)
+*.tfplan                # Pliki planów Terraform
+
+# Ignoruj klucze SSH i pliki PEM
+*.pem                   # Klucze PEM (np. klucze AWS EC2)
+*.key                   # Klucze prywatne
+*.crt                   # Certyfikaty TLS/SSL
+id_rsa                  # Klucz prywatny SSH
+id_rsa.pub              # Klucz publiczny SSH
+
+# Ignoruj logi i pliki tymczasowe
+*.log                   # Pliki logów
+*.bak                   # Kopie zapasowe
+*.swp                   # Pliki swap (np. edytory tekstu)
+*.tmp                   # Pliki tymczasowe
+*.lock                  # Pliki blokujące
+
+# Ignoruj pliki binarne i kompilowane
+*.exe                   # Pliki wykonywalne Windows
+*.out                   # Pliki wyjściowe
+*.class                 # Pliki Java class
+*.o                     # Pliki obiektowe C/C++
+
+# Ignoruj systemowe pliki i katalogi
+.DS_Store               # MacOS
+Thumbs.db               # Windows
+desktop.ini             # Windows
+
+# Ignoruj inne konfiguracje użytkownika
+.env                    # Pliki śro
